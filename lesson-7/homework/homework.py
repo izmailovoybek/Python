@@ -24,10 +24,9 @@ digit_sum(999)
 
 #Berilgan N sonidan oshmaydigan barcha 2 ning darajalarini (ya'ni, 2**k shaklidagi sonlarni) chop etuvchi funksiyani yozing.
 def berilgan(n):
-    d=0
-    for i in range(1,n):
-        while i==2**d:
-            print(i,end='\n')
-            d+=1
-    return
+    d = 1
+    while d <= n:
+        print(d)
+        d *= 2
+
 berilgan(10)
